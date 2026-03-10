@@ -94,7 +94,7 @@ def get_amount(message):
 
         with open(file, "rb") as img:
             markup = types.InlineKeyboardMarkup(row_width=True)
-            but1 = types.InlineKeyboardButton(text=f'Получить {amount} USDT', url='t.me/nightmareteam_bot')
+            but1 = types.InlineKeyboardButton(text=f'Получить {amount} USDT', url='t.me/tonkeepergarant_bot')
             markup.add(but1)
             bot.send_photo(message.chat.id, img, caption=f"🦋 Чек на 🌑{amount} USDT (${amount}).", reply_markup=markup)
 
@@ -108,3 +108,4 @@ while True:
     except Exception as e:
         print(f"Ошибка в polling: {e}")
         time.sleep(3)
+
